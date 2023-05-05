@@ -2,9 +2,12 @@ import  java.util.Scanner;
 public class sum {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        int sum = 0;
-        System.out.println("Input the 5 numbers: ");
-        for(int i=1; i<=5; i++){
+        int n,sum = 0;
+        System.out.print("Ente Total number you want to add:");
+        n=input.nextInt();
+        for(int i=1; i<=n; i++)
+        {   
+            System.out.print("Input the "+i+" number: ");
             int num = input.nextInt();
             sum += num;
         }
